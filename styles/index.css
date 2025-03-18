@@ -1,0 +1,167 @@
+@import url('header.css');
+
+/** Main block */
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/** Section block */
+.section__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/** First section */
+.first-section {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color-500);
+    overflow: hidden;
+}
+/* Section content */
+.first-section__content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.first-section__content h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 90px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.first-section__content p {
+    max-width: 80%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* Section subcontent */
+.first-section__subcontent {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 150px;
+    z-index: 9;
+}
+.first-section__subcontent .subcontent__item h3 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0px;
+}
+.first-section__subcontent .subcontent__item p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    color: #404040;
+}
+
+/* Element images */
+.design-elements__image {
+    position: absolute;
+    z-index: 0;
+}
+.design-element__alarm-clock {
+    margin-top: -500px;
+    margin-left: -650px;
+}
+.design-element__clipboard {
+    margin-top: -80px;
+    margin-left: 100px;
+}
+.design-element__mobile-1 {
+    margin-top: -200px;
+    margin-left: -950px;
+}
+.design-element__mobile-2 {
+    margin-top: -300px;
+    margin-left: 250px;
+}
+
+/** Primary button */
+.primary-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: white;
+    background-color: var(--primary-color-500);
+    padding: 18px 35px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+.primary-btn:hover {
+    background-color: var(--primary-color-400);
+    box-shadow: 0 0 5px var(--primary-color-500);
+}
+
+
+
+
+/** For adaptive */
+@media (max-width: 768px) {
+    /** First section */
+    .first-section {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary-color-500);
+        padding: 0 24px;
+    }
+    .first-section__content {
+        gap: 20px;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .first-section__content h1 {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+    }
+    .first-section__content p {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+    .design-elements__image { display: none; }
+    .design-element__alarm-clock { 
+        width: 90px;
+        display: block;
+        margin-top: -300px;
+        margin-left: 10px;
+    }
+}
